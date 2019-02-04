@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on beddari.codes</title>
+    <link>https://beddari.codes/posts/</link>
+    <description>Recent content in Posts on beddari.codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beddari.codes/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://beddari.codes/posts/cfgmgmtcamp_monday/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://beddari.codes/posts/cfgmgmtcamp_monday/</guid>
+      <description>#cfgmgmtcamp Monday schedule tips === Originally cfgmgmtcamp was a single track conference and although aspects of that still remains in 2019 it is clear that the organizers have taken a liberal approach to adding more tracks. This is awesome but it really makes it challenging to get an overview of what is happening.
+The amount of relevant content available is astounding and knowing that not all of them will be recorded leads to my first tip.</description>
+    </item>
+    
+  </channel>
+</rss>
