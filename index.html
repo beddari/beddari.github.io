@@ -1,53 +1,131 @@
-<!doctype html>
-<html>
-  <head>
-    <title>beddari.codes</title>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.54.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Jan Ivar Beddari" />
-    <meta name="description" content="Engineering team lead @safespring. #devopsdays organizer." />
-    <base href="https://beddari.codes" />
-    <link rel="stylesheet" href="https://beddari.codes/css/main.min.5c7ea264007b7a93d2458bb0b5e7ae37716f5df0819e9721eccc110600296ecd.css" />
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="/"><img class="app-header-avatar" src="./avatar.jpg" /></a>
-      <h1>beddari.codes</h1>
-      <p>Engineering team lead @safespring. #devopsdays organizer.</p>
-      <div class="app-header-social">
-        
-          <a target="_blank" href="https://github.com/beddari"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-        
-          <a target="_blank" href="https://twitter.com/beddari"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-        
-      </div>
-    </header>
-    <main class="app-container">
-      
-  <article>
-    <h1>beddari.codes</h1>
-    <ul class="posts-list">
-      
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="https://beddari.codes/posts/cfgmgmtcamp_2019_tuesday/">#cfgmgmtcamp 2019 tuesday schedule tips</a>
-          <span class="posts-list-item-description">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 2 min read -
-            Feb 5, 2019
-          </span>
-        </li>
-      
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="https://beddari.codes/posts/cfgmgmtcamp_2019_monday/">#cfgmgmtcamp 2019 monday schedule tips</a>
-          <span class="posts-list-item-description">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3 min read -
-            Feb 4, 2019
-          </span>
-        </li>
-      
-    </ul>
-  </article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jan Ivar Beddari</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+      gap: 32px;
+    }
+    .profile { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+    .avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--border); }
+    .profile h1 { font-size: 1.8rem; font-weight: 700; }
+    .profile .username { color: var(--muted); font-size: 1.1rem; }
+    .profile .bio { color: var(--muted); font-size: 0.95rem; max-width: 480px; line-height: 1.6; }
+    .gh-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--accent); text-decoration: none; font-size: 0.9rem;
+      border: 1px solid var(--border); padding: 6px 16px; border-radius: 6px; transition: background 0.2s;
+    }
+    .gh-link:hover { background: var(--surface); }
+    h2 {
+      font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px;
+      align-self: flex-start; width: 100%; max-width: 640px;
+      padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    }
+    .repos { width: 100%; max-width: 640px; display: flex; flex-direction: column; gap: 12px; }
+    .repo-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 16px 20px; text-decoration: none; color: var(--text);
+      display: flex; flex-direction: column; gap: 6px; transition: border-color 0.2s;
+    }
+    .repo-card:hover { border-color: var(--accent); }
+    .repo-card .repo-name { font-weight: 600; color: var(--accent); font-size: 1rem; }
+    .repo-card .repo-desc { color: var(--muted); font-size: 0.875rem; line-height: 1.5; }
+    .repo-meta { display: flex; gap: 16px; font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+    .lang-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+    .lang-python { background: #3572A5; }
+    .lang-vim    { background: #199f4b; }
+    .lang-html   { background: #e34c26; }
+    footer { color: var(--muted); font-size: 0.8rem; margin-top: 16px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
 
-    </main>
-  </body>
+  <div class="profile">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/692371?v=4" alt="Jan Ivar Beddari"/>
+    <h1>Jan Ivar Beddari</h1>
+    <span class="username">@beddari</span>
+    <p class="bio">Infrastructure engineer. Open source tinkerer. Based in Norway.</p>
+    <a class="gh-link" href="https://github.com/beddari" target="_blank">
+      <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      github.com/beddari
+    </a>
+  </div>
+
+  <h2>Public Repositories</h2>
+
+  <div class="repos">
+
+    <a class="repo-card" href="https://github.com/beddari/spillelista" target="_blank">
+      <span class="repo-name">spillelista</span>
+      <span class="repo-desc">Spotify playlist guessing game — guess the song and year from your own playlist.</span>
+      <div class="repo-meta"><span><span class="lang-dot lang-html"></span>HTML</span></div>
+    </a>
+
+    <a class="repo-card" href="https://github.com/beddari/tcli" target="_blank">
+      <span class="repo-name">tcli</span>
+      <span class="repo-desc">Command-line interface tool.</span>
+      <div class="repo-meta">
+        <span><span class="lang-dot lang-python"></span>Python</span>
+        <span>⭐ 1</span><span>🍴 3</span>
+      </div>
+    </a>
+
+    <a class="repo-card" href="https://github.com/beddari/tcli-oncall" target="_blank">
+      <span class="repo-name">tcli-oncall</span>
+      <span class="repo-desc">On-call tooling companion for tcli.</span>
+      <div class="repo-meta">
+        <span><span class="lang-dot lang-python"></span>Python</span>
+        <span>🍴 1</span>
+      </div>
+    </a>
+
+    <a class="repo-card" href="https://github.com/beddari/jerakia-demo" target="_blank">
+      <span class="repo-name">jerakia-demo</span>
+      <span class="repo-desc">Simple Jerakia demos for #cfgmgmtcamp.</span>
+      <div class="repo-meta">
+        <span><span class="lang-dot lang-python"></span>Python</span>
+        <span>🍴 1</span>
+      </div>
+    </a>
+
+    <a class="repo-card" href="https://github.com/beddari/dotfiles" target="_blank">
+      <span class="repo-name">dotfiles</span>
+      <span class="repo-desc">Personal dotfiles and editor configuration.</span>
+      <div class="repo-meta"><span><span class="lang-dot lang-vim"></span>Vim Script</span></div>
+    </a>
+
+    <a class="repo-card" href="https://github.com/beddari/svg-difftest" target="_blank">
+      <span class="repo-name">svg-difftest</span>
+      <span class="repo-desc">SVG diff testing experiments.</span>
+      <div class="repo-meta"></div>
+    </a>
+
+  </div>
+
+  <footer>
+    <a href="https://github.com/beddari" target="_blank">github.com/beddari</a>
+  </footer>
+
+</body>
 </html>
